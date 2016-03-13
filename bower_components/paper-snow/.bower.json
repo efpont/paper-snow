@@ -1,0 +1,35 @@
+{
+  "name": "paper-snow",
+  "authors": [
+    "Akhmed Gaziev <akhmed_gaziev@outlook.com>"
+  ],
+  "keywords": [
+    "web-component",
+    "polymer",
+    "snow"
+  ],
+  "main": "paper-snow.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/akhmed-gaziev/paper-snow/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "web-animations-js": "web-animations/web-animations-js#2.1.4"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0"
+  },
+  "_release": "81fbc2ed9d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "81fbc2ed9d0a00e175b24486e60ce3b8c037c7ae"
+  },
+  "_source": "git://github.com/akhmed-gaziev/paper-snow.git",
+  "_target": "*",
+  "_originalSource": "paper-snow",
+  "_direct": true
+}
