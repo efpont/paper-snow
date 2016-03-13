@@ -1,0 +1,80 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+Example:
+
+    <paper-snow></paper-snow>
+
+@demo demo/index.html
+-->
+
+<dom-module id="paper-snow">
+  <style>
+    :host{
+      position: relative;
+      top: -1.3%;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    :host ::content .snowflake_1{
+      position: absolute;
+      padding: 0.3%;
+      background-color: #fff;
+      border-radius: 50%;
+      box-sizing: border-box;
+     }
+
+    :host ::content .snowflake_2{
+      position: absolute;
+      padding: 0.15%;
+      background-color: #fff;
+      border-radius: 50%;
+      box-sizing: border-box;
+     }
+
+    :host ::content .snowflake_3{
+      position: absolute;
+      padding: 0.15%;
+      background-color: #fff;
+      border-radius: 50%;
+      opacity: .5;
+      box-sizing: border-box;
+     }
+  </style>
+  <template>
+  </template>
+  <script>
+  var PaperSnow = Polymer({
+    is: 'paper-snow',
+    factoryImpl: function(count){
+      this.count = count;
+    },
+    properties: {
+      count: {
+        type: Number,
+        value: 50
+      }
+    },
+    attached: function(){
+      var i = 0,
+        width = document.body.clientWidth - 10,
+        height = document.body.clientHeight;
+      for (i; i<this.count; i++){
+        var snowflake = document.createElement('span');
+        snowflake.className = 'snowflake_' + Math.floor(Math.random() * 3 + 1);
+          snowflake.animate([
+            {transform: 'translate(' + Math.floor(Math.random() * width) + 'px, 0px)'},
+            {transform: 'translate(' + Math.floor(Math.random() * width) + 'px,' + height + 'px)'}
+          ],
+          {
+            duration: Math.floor(Math.random() * (15000 - 7000) + 7000),
+            iterations: Infinity,
+            delay: Math.floor(Math.random() * 10000)
+          })
+        this.appendChild(snowflake);
+      } 
+    }
+  })
+  </script>
+</dom-module>
