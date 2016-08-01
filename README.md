@@ -1,6 +1,6 @@
 # paper-snow
 
-See the [component page](http://akhmed-gaziev.github.io/paper-snow) for more information.
+See the [component page](http://alexander-gaziev.github.io/paper-snow) for more information.
 
 ## Install
 
