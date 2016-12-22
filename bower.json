@@ -2,7 +2,8 @@
   "name": "paper-snow",
   "version": "1.0.0",
   "authors": [
-    "Akhmed Gaziev <akhmed_gaziev@outlook.com>"
+    "Akhmed Gaziev <akhmed_gaziev@outlook.com>",
+    "Fodor István <efpont@gmail.com>"
   ],
   "keywords": [
     "web-component",

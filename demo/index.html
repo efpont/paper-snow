@@ -4,18 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#6EC8CB">
     <link rel="import" href="../paper-snow.html">
-    <script src="../../web-animations-js/web-animations.min.js"></script>
-    <script src="../../webcomponentsjs/webcomponents.js"></script>
+    <script src="../bower_components/web-animations-js/web-animations.min.js"></script>
+    <script src="../bower_components/webcomponentsjs/webcomponents.js"></script>
 </head>
 <body>
 	<style>
 		body{
 			margin: 0;
 			height: 100vh;
-			-webkit-tap-highlight-color: transparent;
-			background: url(background.svg) #6EC8CB no-repeat 50% 100%;
-			background-size: 90%;
-			background-attachment: fixed;
+			background: url(background.svg), radial-gradient(100rem 100vh at 50% 100%, hsl(210,95%,25%), hsl(210,95%,5%));
+			background-repeat: repeat-x, no-repeat;
+			background-position: center bottom, center center;
+			background-attachment: fixed, fixed;
+			background-size: 40rem, cover;
 		}
 	</style>
 	<paper-snow></paper-snow>
